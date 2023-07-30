@@ -1,0 +1,129 @@
+<!-- sticky menu meaning page ko scrool niche krne pr bhi menu upper hi rheta hai  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body {
+            margin: 0px;
+            /* body ke charo tarf space nahi rhe  */
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #logo {
+            width: 350px;
+            height: auto;
+        }
+
+        #menu-bar {
+            text-align: center;
+            background-color: cadetblue;
+
+        }
+
+        #menu-bar li {
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        #container {
+            text-align: center;
+            padding: 50px 100px;
+        }
+
+        #about-img {
+            width: 100%;
+        }
+
+        /* sticky to css krne se bhi ho gaya hai lekin ek error hai ki hamare logo ko efect krta hai  */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="images/abhi.png" id="logo" alt="">
+    </div>
+    <nav id="menu-bar">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Our Team</li>
+            <li>Client</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img src="images/pexels-craig-adderley-1563356.jpg" id="about-img" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquid ipsa et vel officia magnam cum nulla
+            itaque excepturi tempora voluptatibus beatae reprehenderit ullam, quo rem molestiae, ad expedita alias?
+            Nulla, magni. Sit nobis temporibus quod voluptatibus iusto, beatae libero exercitationem dolores iure
+            officia dolorem tempore similique mollitia vero commodi, inventore quae nam ipsum! Consequuntur hic alias
+            voluptate et sapiente, atque, deserunt corporis maiores unde nesciunt ullam dignissimos totam excepturi
+            culpa obcaecati quas suscipit. Necessitatibus inventore autem atque ea ipsa dicta aspernatur molestias
+            fugiat illum dignissimos praesentium qui cupiditate architecto similique, unde, consectetur officia totam
+            iure odit quia nam exercitationem recusandae. Facere explicabo inventore mollitia, quidem rerum quo eius
+            distinctio aliquid, quaerat sequi impedit nihil laudantium. Ipsam alias aspernatur vero, numquam
+            necessitatibus eaque fugiat facere veniam omnis vel fuga. Reiciendis enim mollitia ipsa dolorem. Optio quo
+            nostrum expedita similique aut laboriosam, velit facere ea praesentium porro corporis tempore autem!
+            Facilis, odit qui animi incidunt labore voluptate saepe sapiente deserunt eligendi tenetur vitae reiciendis
+            facere harum consequuntur nesciunt molestiae iste ab sit eius molestias, earum eos tempore. In expedita
+            impedit rem molestias repellendus laboriosam facere ducimus placeat assumenda ex recusandae, molestiae quis
+            exercitationem ab! Vero assumenda atque provident hic quisquam asperiores possimus et voluptate
+            exercitationem reprehenderit laborum, voluptatibus qui harum? Repellat non esse repudiandae minus? Dolorem,
+            suscipit eius? Ad dolores similique ratione iure illo vitae necessitatibus at, mollitia inventore culpa
+            suscipit amet pariatur et eius itaque! Impedit, officia aliquam modi nemo incidunt ipsa odio laboriosam
+            asperiores nulla, tempore atque vero doloribus nihil at necessitatibus provident placeat dolores? Eius
+            distinctio cumque, non asperiores, hic dolore, obcaecati laboriosam tenetur minus numquam temporibus
+            voluptatem eum velit recusandae labore! Iste saepe corporis rem laudantium explicabo aspernatur ratione sit.
+            Quisquam quae, aliquid dignissimos nulla ex numquam qui optio voluptatem similique, illum rerum fugiat eius,
+            ad vel molestiae. Saepe nisi, consequatur totam tempora reprehenderit eius magni? Animi beatae ipsa mollitia
+            blanditiis itaque dicta, harum excepturi quae, unde ex totam eius fugiat quas, ducimus maxime officia. Modi
+            molestias, id omnis eos ipsum delectus. Quas eaque amet, eveniet mollitia, possimus magni quia nemo
+            veritatis incidunt ut iure facere consectetur! Ut cumque suscipit facere. Quod sed eaque repellendus
+            suscipit id impedit sapiente, ratione nemo, ex facere optio dolores, ipsum fugiat libero dolorem laudantium.
+            Laborum temporibus molestias eum consequatur rem optio nulla, iste consectetur, animi cum, alias recusandae
+            accusantium commodi harum blanditiis magni voluptatibus officiis quo hic a. Ea eligendi commodi, quidem
+            quaerat porro doloribus asperiores, labore laboriosam quae deserunt quia dolorem? Velit harum voluptate
+            adipisci omnis quisquam quo tempora, odit nam, error, accusantium temporibus? Veritatis culpa architecto
+            ipsam aut distinctio! Repellendus omnis accusamus optio ex ipsa explicabo dignissimos, voluptatibus,
+            provident atque adipisci nisi voluptas debitis ratione expedita hic, consequuntur impedit libero doloremque.
+            Nulla laudantium nemo voluptates magnam aliquam perspiciatis, assumenda optio omnis ullam veniam tempora ab!
+            Quaerat impedit perferendis laborum porro dicta. Dolor vel fugiat ipsam quos quo excepturi, id numquam
+            nesciunt sunt ut! Totam iusto voluptate deserunt labore ratione omnis amet, et maxime beatae, voluptatum
+            unde commodi, at quas?
+        </p>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {    //  window select kra kyunki page pr krwana hai
+            let navbar = document.getElementById('menu-bar');
+            if (window.pageYOffset >= 98) {
+                // pageYOffset use hota hai vertial ke liye 98 logo ki height hai iske baad sticky ho jaayega
+                navbar.classList.add('sticky');  // navbar main class add kri iska upper css likh hua hai
+            } else {
+                navbar.classList.remove('sticky');// else is liye lagaya kyunki wo wapas niche aane ke baad bhi niche nahi aata isliye remove
+            }
+        });
+    </script>
+</body>
+
+</html>

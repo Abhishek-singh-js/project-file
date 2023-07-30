@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="imageslider.css">
+</head>
+
+<body>
+    <div class="slde-container">
+        <div class="slide">
+            <img src="images/pexels-alex-andrews-816608.jpg" alt="">
+            <div class="caption">Caption Text 1</div>
+        </div>
+
+        <div class="slide">
+            <img src="images/pexels-craig-adderley-1563356.jpg" alt="">
+            <div class="caption">Caption Text 2</div>
+        </div>
+
+        <div class="slide">
+            <img src="images/pexels-frank-cone-2258536.jpg" alt="">
+            <div class="caption">Caption Text 3</div>
+        </div>
+
+        <div class="slide">
+            <img src="images/pexels-michael-block-3225517.jpg" alt="">
+            <div class="caption">Caption Text 4</div>
+        </div>
+
+        <!-- left right ka html code hota hai arrow ka -->
+        <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+        <span class="arrow next" onclick="controller(1)">&#10095;</span>
+    </div>
+    <script src="imageslider.js"></script>
+</body>
+
+</html>
